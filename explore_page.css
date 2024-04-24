@@ -1,0 +1,266 @@
+/* explore_page.css */
+
+* {
+  padding: 0.8px;
+  font-family: "outfit";
+  font-size: 16px;
+}
+
+body {
+  margin: 0;
+  scroll-behavior: smooth;
+  background-color: rgba(0, 0, 0, 0.922);
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center content horizontally */
+  justify-content: center; /* Center content vertically */
+}
+
+body::-webkit-scrollbar {
+  width: 20px;
+  background-color: black;
+}
+
+body::-webkit-scrollbar-track {
+  background: rgb(0, 0, 0);
+  border-radius: 5px;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background: #1f1f1f;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #40404066;
+  border-radius: 5px;
+}
+
+.carousel::-webkit-scrollbar {
+  display: none;
+}
+
+.container{
+  margin: 10px 20px;
+  padding: 0;
+  width: 90%;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.navbar-leftside {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-rightside {
+  display: flex;
+  align-items: center;
+}
+
+.S_btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 5vh;
+  width: 15vh;
+  font-family: outfit;
+  color: #ffffff;
+  border: 2px rgb(255, 255, 255) solid;
+  border-radius: 20px;
+  padding: 2px 2px;
+  margin: 10px;
+}
+
+.S_btn h3, a {
+  font-size: 22px;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+
+.S_btn:hover{
+border: 2px rgb(255, 255, 255) solid;
+background-color: rgb(249, 99, 49);
+}
+
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+a:link, a:visited {
+  color: inherit;
+  text-decoration: none;
+}
+
+#logoimg {
+  height: 65px;
+  width: 65px;
+  margin-right: 40px;
+  color: black;
+}
+
+
+.quizTitle {
+  font-family: outfit;
+  font-size: 2.5rem;
+  color: white;
+}
+
+.quizTitle:hover{
+  text-shadow: 2px 2px 5px rgb(249, 99, 49);
+}
+
+.section h2,h1{
+  
+  text-shadow: 2px 2px 5px #6700c1;
+  color: white;
+  font-size: 5rem;
+}
+
+.section h2:hover,h1:hover{
+  
+  text-shadow: 2px 4px 5px #2d00c1;
+  text-shadow: 2px 4px 5px #2d00c1;
+  font-size: 5rem;
+  cursor: pointer;
+}
+.section p {
+  color: rgb(236, 243, 250);
+  font-size: 28px;
+
+}
+
+#star-description strong{
+  color: #aeaeae;
+  font-size: 30px;
+}
+
+
+#star-image {
+  border-radius: 410px;
+  max-width: 50vh;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  box-shadow: 0px 0px 10px  rgba(102, 0, 170, 0.562);
+}
+
+
+#star-image:hover{
+  box-shadow: 0px 0px 30px  rgba(102, 0, 170, 0.732);
+
+}
+
+/* Styling the button container and buttons */
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.prev-button, .next-button {
+  margin: 0 10px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #4CAF50; /* Green color for buttons */
+  color: white;
+  cursor: pointer;
+}
+
+.prev-button:hover, .next-button:hover {
+  background-color: #45a049;
+}
+
+.facts-container {
+  display: flex;
+  margin-top: 20px;
+  width: fit-content;
+  max-width: 800px;
+  overflow: hidden;
+  border-radius: 20px;
+  text-align: center;
+  scroll-snap-align: start; /* Snap section to the top */
+}
+
+/* Fact styling */
+.fact {
+  display: none;
+  font-family: "Outfit", sans-serif;
+  font-size: 16px;
+  color: white;
+  padding: 5px;
+  padding-right: 40px;
+  background-color: #440098a5;
+  border-radius: 5px;
+  opacity: 1;
+  text-align: center;
+  width: 100%;
+}
+
+.nextfactbtn {
+  margin-top: 20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.footer-navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.contact-btn {
+  display: flex;
+  align-items: right;
+  justify-content: center;
+  height: 5vh;
+  width: 15vh;
+  font-family: outfit;
+  background: transparent;
+  color: white;
+  border: 2px white solid;
+  padding: 2px 2px;
+  margin: 10px;
+  
+}
+
+.contact-btn:hover {
+  transition: all 0.6 ease;
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+hr{
+  margin-top: 30px;
+  background-color: whitesmoke;
+}

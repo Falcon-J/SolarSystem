@@ -1,0 +1,332 @@
+body {
+  margin: 0;
+  scroll-behavior: smooth;
+  /* background-image: url(starbg.jpg); */
+  /* background-color: black; */
+  background-image: linear-gradient(90deg, #000000f5 0%, #030507 100%);
+  overflow: hidden;
+}
+body::-webkit-scrollbar {
+  width: 20px;
+  background-color: black;
+}
+
+body::-webkit-scrollbar-track {
+  background: rgb(0, 0, 0);
+  border-radius: 5px;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background: #1f1f1f;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #18181866;
+  border-radius: 5px;
+}
+.wrapper {
+  margin: 10px;
+  height: 100vh;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+}
+.wrapper::-webkit-scrollbar {
+  display: none;
+}
+
+#astro_img {
+  animation: img_grow 15s ease-in-out infinite;
+}
+
+@keyframes img_grow {
+  0%,
+  100% {
+    transform: scale(0.8); /* Start at normal size */
+  }
+  50% {
+    transform: scale(0.9); /* Grow to 120% of the original size */
+  }
+}
+
+.intro {
+  /* margin: 50px; */
+  margin-top: 140px;
+  height: auto;
+  width: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.intro p {
+  height: fit-content;
+  margin: 0;
+  margin-left: 20px;
+  color: rgb(250, 199, 88);
+
+  font-size: 105px;
+  font-family: outfit;
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 3s ease-out;
+}
+
+.nav-center {
+  width: 100px; /* Keep the width as is */
+  flex-grow: 1;
+  text-align: center;
+  overflow: hidden; /* Hide overflow for smooth scrolling */
+  color: white;
+  text-align: center;
+  position: relative; /* Needed for absolute positioning of .scrolling-text */
+  height: 5vh;
+  width: 15vh;
+}
+
+.WOD {
+  font-family: monospace;
+  margin: 0;
+  margin-top: 5px;
+  font-size: 28px;
+  /* justify-content: center;
+  align-content: center; */
+  color: white;
+  font-size: 28px;
+  text-align: center;
+  white-space: nowrap;
+  height: fit-content;
+  padding-left: 97%;  
+  position: absolute;
+  width: fit-content; 
+  animation: scrollText 10s linear infinite; /* Speed and direction of scroll */
+}
+
+/* Keyframes for scrolling text */
+@keyframes scrollText {
+  from {
+    transform: translateX(0); /* Start at the left */
+  }
+  to {
+    transform: translateX(-100%); /* Scroll to the left */
+  }
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between; /* Adjust alignment */
+  align-items: center; /* Align items vertically */
+  padding: 0px;
+  margin: 0px;
+  background: transparent(20px);
+}
+
+.navbar-rightside {
+  display: flex;
+  justify-content: space-between;
+  display: flex;
+  align-items: center; /* Align items vertically */
+}
+
+.navbar-leftside {
+  margin-right: 10px;
+  display: flex;
+  align-items: center; /* Align items vertically */
+}
+
+.S_btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 5vh;
+  width: 15vh;
+  font-family: outfit;
+  color: white;
+  border: 2px white solid;
+  border-radius: 20px;
+
+  padding: 2px 2px;
+  margin: 10px;
+  transition: all 0.7 ease;
+}
+
+.S_btn:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+  border: 2px rgb(255, 255, 255) solid;
+  background-color: rgb(249, 99, 49);
+}
+.S_btn h3,
+a {
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center; /* Align items vertically */
+}
+#logoimg {
+  height: 60px;
+  width: 60px;
+  margin-right: 40px;
+}
+
+.dateval {
+  font-family: outfit;
+  font-size: large;
+  color: white;
+}
+
+a:link,
+a:visited {
+  color: inherit;
+  text-decoration: none;
+}
+
+
+
+.container1 {
+  height: 100vh;
+  display: flex;
+}
+
+.astro_img {
+  margin: 100px 10px 20px 80px;
+}
+
+.planet_title {
+  margin-top: 40px;
+}
+.planet_title h1 {
+  margin: 0;
+  font-size: 100px;
+  font-family: outfit;
+  color: white;
+  text-align: center;
+}
+
+.carousel-container {
+  margin-top: 15vh;
+  margin-bottom: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.planet-carousel {
+  margin: 1px;
+  transition: transform 0.4s ease-in-out;
+}
+
+.planet-carousel:hover {
+  transform: scale(1.4);
+}
+
+.planet-carousel img {
+  width: auto;
+  height: 135px;
+}
+
+.planet-carousel {
+  position: relative;
+  display: inline-block;
+}
+
+.planet-carousel::after {
+  content: attr(id);
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: transparent;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+.planet-carousel:hover::after {
+  opacity: 1;
+}
+
+.explore_btn {
+  margin: 2%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container3 {
+  margin: 10px;
+  height: 50vh;
+  display: flex;
+}
+
+.explore_btn button {
+  margin: 0;
+  height: 8vh;
+  width: 20vh;
+  color: white;
+  font-family: outfit;
+  font-size: large;
+  font-weight: 350;
+  background: transparent;
+  backdrop-filter: blur(90px);
+  border: 1px solid rgb(82, 82, 82);
+  transition: all 0.4s ease-in-out;
+}
+
+.explore_btn button:hover {
+  cursor: pointer;
+  background: transparent;
+  backdrop-filter: blur(10px);
+  border: 5px solid white;
+  transform: scale(1.1);
+}
+
+.container3 {
+  margin: 0;
+  padding: 0;
+  width: 100%; /* Adjust to your desired width */
+  height: 200px; /* Adjust to your desired height */
+  position: relative;
+  overflow: hidden; /* Ensure video stays within the container */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} /* height: 200px; */
+
+.video-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensure video covers the entire container */
+  z-index: -1; /* Send video behind other content */
+}
+
+.container1,
+.container2,
+.container3 {
+  height: 100vh; /* Set each container's height to the full viewport height */
+  scroll-snap-align: start;
+  scroll-snap-type: y mandatory;
+}
+
+.scrolling-text {
+  font-family: "Montserrat", sans-serif;
+  color: white;
+  font-size: 20vh;
+}
+
+.scrolling-text marquee {
+  font-family: "Montserrat", sans-serif;
+  color: white;
+  font-size: 20vh;
+}

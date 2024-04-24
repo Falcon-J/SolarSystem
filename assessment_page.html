@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>AssessmentPage</title>
+    <link rel="stylesheet" type="text/css" href="assessment_page.css" />
+  </head>
+
+  <body>
+    <header>
+      <a href="index.html">
+        <img class="logo" src="LOGO.svg" alt="" />
+      </a>
+      <h1>Quiz</h1>
+    </header>
+    <div class="container">
+      <div id="quiz-container">
+        <div id="question-container">
+          <p id="question"></p>
+          <div id="options">
+            <!-- Options will be added here dynamically -->
+          </div>
+        </div>
+        <button id="next-btn" class="btn" onclick="goToNextQuestion()">
+          Next
+        </button>
+        <p id="prompt-message" style="display: none">
+          Please select an option.
+        </p>
+      </div>
+
+      <div id="score-container" style="display: none">
+        <p>Your score: <span id="score"></span></p>
+        <button id="reattempt-btn">Reattempt</button>
+      </div>
+    </div>
+
+    <script src="AssessmentPage.js"></script>
+  </body>
+</html>

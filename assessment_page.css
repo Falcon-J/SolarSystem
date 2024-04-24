@@ -1,0 +1,118 @@
+/* Global styling */
+* {
+  margin: 0;
+  padding: 0.8px;
+  font-family: "Outfit", sans-serif;
+  /* font-size: 16px; */
+}
+
+body {
+  height: 100vh; /* Full viewport height */
+  margin: 0; /* No margin */
+  background-color: rgba(0, 0, 0, 0.922); /* Background color */
+  font-size: 16px;
+  color: white;
+  overflow: hidden;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  width: 100%;
+}
+
+.logo
+{
+    height: 60px;
+    width: 60px;
+}
+
+/* Container styling */
+.container {
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; /* Centering items */
+  height: 100vh; /* Full height */
+}
+
+/* Quiz container styling */
+#quiz-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centering items */
+  justify-content: center; /* Centering items */
+  width: 60%;
+  height: 60%;
+  margin: 0;
+  padding: 30px; /* Padding around quiz container */
+  border: 1px solid #ccc; /* Border */
+  border-radius: 10px; /* Rounded corners */
+}
+
+/* Score container styling */
+#score-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centering items */
+  justify-content: center; /* Centering items */
+  width: 50%; /* Adjust width as necessary */
+  height: 50%; /* Adjust width as necessary */
+  padding: 10px; /* Padding around score container */
+  border: 1px solid #ccc; /* Border */
+  border-radius: 10px; /* Rounded corners */
+}
+
+/* Button styling */
+.btn {
+  margin: 10px 0;
+}
+
+h1 {
+  text-shadow: 2px 2px 5px #fc5000;
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+p {
+  color: rgb(236, 243, 250);
+  font-size: 28px;
+}
+
+button {
+  margin: 10px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: rgba(141, 41, 235, 0.996);
+}
+
+/* Option styling */
+.option {
+  margin: 30px 2px;
+  padding: 5px;
+  background-color: transparent;
+  border: 1px white solid;
+  border-radius: 5px;
+  cursor: pointer;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  margin-bottom: 20px;
+}
+
+.option:hover {
+  background-color: #adadad;
+}

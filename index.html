@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Solar System</title>
+    <link rel="stylesheet" href="homepage_final.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="homepage.js"></script>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <ul class="navbar-leftside">
+          <li><img src="Images/LOGO.svg" alt="" id="logoimg" /></li>
+          <li><h3 class="dateval"></h3></li>
+        </ul>
+        <div class="nav-center">
+          
+          <div id="scrolling-text-wod" class="WOD">
+              Word of the Day
+            </div>
+      </div>
+        <div class="navbar-rightside">
+          <a href="SignUp.html">
+            <div class="S_btn">
+              <h3>Sign Up</h3>
+            </div>
+          </a>
+
+          <a href="SignIn.html">
+            <div class="S_btn">
+              <h3>Sign In</h3>
+            </div>
+          </a>
+        </div>
+      </nav>
+    </header>
+    <div class="wrapper">
+      <div class="container1">
+
+        <div class="intro">
+          <p>
+            Discover the realm of our Solar System!
+          </p>
+        </div>
+        <div class="astro_img">
+          <img
+            id="astro_img"
+            alt="astronaut chilling on the moon"
+            width="450"
+            height="450"
+            src="Images/astro-removebg-preview.svg"
+          />
+        </div>
+      </div>
+      
+      <div class="container2">
+        <div class="planet_title">
+          <h1>
+            <img
+              width="70"
+              height="70"
+              src="https://github.githubassets.com/assets/footer-diamond-ed642fc95144.png"
+            />
+            Planets
+          </h1>
+        </div>
+        <div class="carousel-container">
+          <a href="Mercury_Info.html">
+            <div class="planet-carousel" id="MERCURY">
+              <img src="Images/Mercury2-finalpng.svg" alt="Mercury" />
+            </div>
+          </a>
+          <a href="Venus_Info.html">
+            <div class="planet-carousel" id="VENUS">
+              <img src="Images/venus-bg.svg" alt="Venus" />
+            </div>
+          </a>
+          <a href="Earth_Info.html">
+            <div class="planet-carousel" id="EARTH">
+              <img src="Images/Earth-removebg.svg" alt="Earth" />
+            </div>
+          </a>
+          <a href="Mars_Info.html">
+
+            <div class="planet-carousel" id="MARS">
+              <img src="Images/mars-removebg-preview.svg" alt="Mars" />
+            </div>
+          </a>
+          <a href="Jupiter_Info.html">
+            <div class="planet-carousel" id="JUPITER">
+              <img
+              src="Images/jupiter.svg"
+              alt="Jupiter"/>
+            </a>
+          </div>
+          <a href="Saturn_Info.html">
+            <div class="planet-carousel" id="STAURN">
+              <img src="Images/saturn-removebg-preview.svg" alt="Saturn" />
+            </div>
+          </a>
+          <a href="Uranus_Info.html">
+            <div class="planet-carousel" id="URANUS">
+              <img src="Images/uranus-removebg-preview.svg" alt="Uranus" />
+            </div>
+          </a>
+          <a href="Neptune_Info.html">
+            <div class="planet-carousel" id="NEPTUNE">
+              <img src="Images/neptune-removebg-preview.svg" alt="Neptune" />
+            </div>
+          </a>
+      </div>
+
+      <div class="container3">
+        <a href="ExplorePage.html">
+          <div class="scrolling-text">
+            <marquee behavior="scroll" scrolldelay="-1" direction="left" scrollamount="35">
+              Explore the wonders of the universe with us!           
+            </marquee>
+          </div>
+          <video class="video-background" autoplay loop muted>
+            <source src="Videos/ISS-(1080p).mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+            <div class="explore_btn">
+              <button>
+                LAUNCH!
+              </button>
+            </div>
+        </a>
+      </div>
+    </div>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+    // Define a list of words (you can replace this with a dynamic source)
+    const words = [
+        'Ephemeral',
+        'Capricious',
+        'Quixotic',
+        'Serendipity',
+        'Ubiquitous',
+        'Ineffable'
+    ];
+    
+    function getWordOfTheDay() {
+        const randomIndex = Math.floor(Math.random() * words.length);
+        return words[randomIndex];
+    }
+    
+    const wordOfTheDayElement = document.getElementById('scrolling-text-wod');
+    wordOfTheDayElement.textContent = `Word of the Day : ${getWordOfTheDay()}`;
+});
+
+    </script>
+  </body>
+</html>

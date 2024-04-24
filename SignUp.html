@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="UserSignUp.css" />
+  </head>
+
+  <body>
+    <script src="SignUp.js"></script>
+    <div class="home_logo">
+      <a href="index.html">
+        <img src="Images/LOGO.svg" alt="Logo" />
+      </a>
+    </div>
+
+    <!-- Add a container for the alert message -->
+    <div id="alert-message-container" class="alert-container"></div>
+
+    <div class="wrapper">
+      <!-- Left Column for background image -->
+      <div class="bg-image">
+        <img src="Images/floating_man.png" alt="floating_man" />
+      </div>
+
+      <!-- Right Column for the form -->
+      <div class="form-container">
+        <form class="registration-form">
+          <h1>Sign Up</h1>
+          <div class="input-box">
+            <input
+              type="text"
+              name="username"
+              placeholder="Username"
+              required
+            />
+          </div>
+          <div class="input-box">
+            <input type="email" name="email" placeholder="Email" required />
+          </div>
+          <div class="input-box">
+            <input
+              type="password"
+              name="password"
+              placeholder="Password"
+              required
+            />
+          </div>
+          <div class="input-box">
+            <input
+              type="password"
+              name="confirmPassword"
+              placeholder="Confirm Password"
+              required
+            />
+          </div>
+          <div class="input-box">
+            <select name="education" class="select-box" required>
+              <option value="" disabled selected>Select Education Level</option>
+              <option value="high-school">High School</option>
+              <option value="bachelors">Bachelor's Degree</option>
+              <option value="masters">Master's Degree</option>
+              <option value="doctorate">Doctorate Degree</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+          <div class="input-box">
+            <input type="date" name="dateOfBirth" required />
+          </div>
+          <div class="input-box">
+            <input
+              type="tel"
+              name="phoneNumber"
+              placeholder="Phone Number"
+              required
+            />
+          </div>
+          <button type="submit" class="btn">Register</button>
+          <div class="register-link">
+            <p>Have an account? <a href="SignIn.html">Sign In</a></p>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
