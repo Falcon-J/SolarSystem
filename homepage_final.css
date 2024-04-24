@@ -1,7 +1,6 @@
 body {
   margin: 0;
   scroll-behavior: smooth;
-  /* background-image: url(starbg.jpg); */
   /* background-color: black; */
   background-image: linear-gradient(90deg, #000000f5 0%, #030507 100%);
   overflow: hidden;
