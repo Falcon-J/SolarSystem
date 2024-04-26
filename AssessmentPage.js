@@ -89,10 +89,7 @@ const questionEl = document.getElementById("question");
 const optionsEl = document.getElementById("options");
 const nextBtn = document.getElementById("next-btn");
 const scoreEl = document.getElementById("score");
-const reattemptBtn = document.getElementById("reattempt-btn");
-const showLeaderboardBtn = document.getElementById("show-leaderboard-btn");
-const leaderboardEl = document.getElementById("leaderboard");
-const leaderboardListEl = document.getElementById("leaderboard-list");
+const reattemptBtn = document.getElementById("reattempt-btn");;
 const quizContainer = document.getElementById("quiz-container");
 const scoreContainer = document.getElementById("score-container");
 const promptMessageEl = document.getElementById("prompt-message");
@@ -183,18 +180,7 @@ function showScore() {
   quizContainer.style.display = "none";
   scoreContainer.style.display = "block";
   scoreEl.textContent = score;
-
-  // Track attempt and add to leaderboard
-  recordAttempt();
-  updateLeaderboard();
 }
-
-// Function to record the attempt
-function recordAttempt() {
-  const timestamp = new Date();
-  attempts.push({ score, timestamp });
-}
-
 
 // Event listener for reattempt button
 reattemptBtn.addEventListener("click", () => {

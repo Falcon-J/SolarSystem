@@ -1,0 +1,212 @@
+/* Global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI";
+  }
+  
+  /* Logo styles */
+  .home_logo {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 60px;
+    height: 60px;
+  }
+  
+  .home_logo img {
+    height: 40px;
+    width: 40px;
+  }
+  
+  /* Body styles */
+  .SignUpBody {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: black;
+  }
+  
+  /* Alert message container styles */
+  .alert-container {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 1000;
+  }
+  
+  /* Alert message styles */
+  .alert {
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    opacity: 0.9;
+    color: white;
+  }
+  
+  .alert.error {
+    background-color: red;
+  }
+  
+  .alert.success {
+    background-color: green;
+  }
+  
+  .dateval {
+    font-family: outfit;
+    font-size: large;
+    color: white;
+    margin-right: 20px;
+  }
+  
+  /* Wrapper as grid container */
+  .wrapper2 {
+    display: grid;
+    grid-template-columns: 2fr 1fr; /* Wider left column */
+    /* max-width: 800px; */
+    width: 120vh;
+    height: 80vh;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  /* Left column with background image */
+  .bg-image {
+    margin: 0px;
+    padding: 0px;
+    grid-column: 1 / 2; /* Covers the left column */
+    position: relative;
+    overflow: hidden; /* Prevents overflow */
+  }
+  
+  .bg-image img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the whole area */
+    z-index: -1; /* Send image behind other content */
+    animation: zoomInOut 10s ease-in-out infinite; /* Animation name, duration, timing, and infinite loop */
+  }
+  
+  /* Keyframes for zooming animation */
+  @keyframes zoomInOut {
+    0%,
+    100% {
+      transform: scale(1.3);
+    }
+    50% {
+      transform: scale(1.5);
+    }
+  }
+  
+  /* Form container in the right column */
+  .form-container {
+    overflow: hidden;
+    width: 50vh;
+    padding: 20px;
+    color: white;
+    grid-column: 2 / 3; /* Covering the right column */
+  }
+  
+  /* Form and input box styles */
+  .registration-form {
+    width: 100%;
+    text-align: center;
+  }
+  
+  .input-box {
+    width: 100%;
+    height: 40px; /* Reduced height */
+    margin: 15px 0;
+  }
+  
+  .input-box input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: 2px solid rgb(229, 229, 229);
+    border-radius: 10px; /* Reduced border radius */
+    padding: 5px 10px; /* Reduced padding */
+    color: white;
+    outline: none;
+    font-size: 14px; /* Reduced font size */
+  }
+  
+  /* Button styles */
+  .btn {
+    width: 100%;
+    height: 40px; /* Reduced height */
+    background: white;
+    border: none;
+    border-radius: 10px; /* Reduced border radius */
+    cursor: pointer;
+    font-size: 14px; /* Reduced font size */
+    color: #333;
+    font-weight: bold;
+  }
+  
+  .btn:hover {
+    color: #fff;
+    background-color: rgb(18, 1, 95);
+  }
+  /* Register link styles */
+  .register-link p {
+    margin-top: 10px;
+  }
+  
+  .register-link p a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .register-link p a:hover {
+    color: white;
+    text-decoration: underline;
+  }
+  
+  .select-box {
+    width: 100%;
+    height: 40px;
+    background: transparent;
+    border: 2px solid rgb(229, 229, 229);
+    border-radius: 10px;
+    padding: 5px 10px;
+    color: rgba(231, 227, 227, 0.5);
+    outline: none;
+    font-size: 14px;
+  }
+  
+  ::placeholder {
+    color: rgb(255, 255, 255, 0.7);
+  }
+  
+  .select-box option {
+    color: rgb(255, 255, 255, 0.7);
+    background-color: #333;
+  }
+  
+  input[type="date"]::-webkit-calendar-picker-indicator:before {
+    background: #eee;
+    background: linear-gradient(90deg, #eee, #fff);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    border-radius: 24px;
+    content: "";
+    display: block;
+    height: 22px;
+    left: -2px;
+    position: absolute;
+    top: -5px;
+    width: 22px;
+    z-index: -1;
+  }
+  input[type="date"]::-webkit-calendar-picker-indicator {
+    background-color: rgb(255, 255, 255);
+  }
+  
